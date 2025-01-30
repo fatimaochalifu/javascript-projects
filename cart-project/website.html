@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Buttons</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <img src="/asset/adults-plain-cotton-tshirt-2-pack-teal-removebg-preview.png" alt="">
+            <h2>Adults Plain Cotton T-Shirt - 2 Pack</h2>
+            <p>These t-shirts are perfect for casual wear or team events.</p>
+        </div>
+
+        <div class="button-div">
+            <button onclick=" cartQuantity = 0; console.log(`cart quantity: ${(cartQuantity)}`);"
+                class="yellow-btn">Show quantity</button>
+
+            <button onclick="cartQuantity ++; console.log(`cart quantity: ${(cartQuantity)}`);" class="orange-btn">Add
+                to
+                cart</button>
+
+        </div>
+        
+        <div class="button-div">
+            <button onclick="cartQuantity += 2; console.log(`cart quantity: ${(cartQuantity)}`);" class="blue-btn">+
+                2</button>
+
+            <button onclick="cartQuantity += 3; console.log(`cart quantity: ${(cartQuantity)}`);"
+                class="purple-btn">+3</button>
+        </div>
+
+        <div class="button-div">
+            <button onclick="cartQuantity =0; 
+            console.log(`Cart is reset`); 
+            console.log(`cart quantity: ${(cartQuantity)}`);" class="green-btn">Reset</button>
+            <button onclick="cartQuantity --;  
+            console.log(`cart quantity: ${(cartQuantity)}`);" class="pink-btn"> -1</button>
+        </div>
+
+    </div>
+    <script>
+        let cartQuantity = 0;
+    </script>
+</body>
+
+</html>
